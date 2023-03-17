@@ -1,0 +1,103 @@
+<html>
+	<head>
+		<title>HTML 表格标签学习</title>
+		<meta charset="UTF-8"/>
+		<!--表格标签学习：
+			table: 声明一个表格
+				tr: 声明一行，设置行高及该行所有单元格的高度
+					th:声明一个单元格，表头格，默认居中加黑
+					td: 声明一个单元格,默认使用原始数据
+				注意：
+			属性：
+				border: 给表格添加边框
+				width: 设置表格的宽度
+				height: 设置表格的高度
+				cellpadding: 设置内容据边框的距离
+				cellspacing: 设置边框的大小
+			特点： 
+			 	默认根据数据的多少改变表格的大小
+		-->
+	</head>
+	<body>
+		<h3>表格标签学习</h3>
+		<hr />
+		<h4>表格标签的常用属性及设置学习：</h4>
+		<table border="1px" cellpadding="0" cellspacing="0">
+			<tr height="50px">
+				<th width="100px">姓名</th>
+				<th width="100px">性别</th>
+				<th width="100px">学号</th>
+				<th width="100px">专业</th>
+			</tr>
+			<tr height="50px" align="center">
+				<td>张三</td>
+				<td>男</td>
+				<td>10086</td>
+				<td>广告学</td>
+			</tr>
+			<tr height="50px" align="center">
+				<td>李四</td>
+				<td>女</td>
+				<td>10010</td>
+				<td>市场营销</td>
+			</tr>
+		</table>
+		
+		
+		<!--快速表格：
+			tabel>tr*n>td*m  + Tab
+			单元格合并：
+				第一步：首先保证表格是一个规整的表格
+				第二步：根据需要合并的单元格，找到其源码位置
+				第三步：
+					行合并：在合并位置的上面一格加rowspan = "n"，删掉下马单元格的源码
+					列合并：在合并位置左边一格加colspan = "m",删掉右边单元格的源码
+		-->
+		<hr />
+		<h4>表格单元格的合并属性</h4>
+		<table border="1px" cellpadding="0" cellspacing="0">
+			<tr height="50px">
+				<th width="100px">保险人</th>
+				<th width="100px">保险单号</th>
+				<th width="100px">保险受益人</th>
+				<th width="100px">保险额度</th>
+				<th width="100px">保险余额</th>
+			</tr>
+			<tr height="50px" align="center">
+				<td>张三</td>
+				<td>10000</td>
+				<td>张月</td>
+				<td>200000</td>
+				<td>18643</td>
+			</tr>
+			<tr height="50px" align="center">
+				<td>李四</td>
+				<td>10010</td>
+				<td>李华</td>
+				<td>5000000</td>
+				<td>2665515</td>
+			</tr>
+			<tr height="50px" align="center">
+				<td>王五</td>
+				<td>10086</td>
+				<td>老王</td>
+				<td>444444</td>
+				<td>111111</td>
+			</tr>
+			<tr height="50px" align="center">
+				<td colspan="2"></td>
+				<td></td>
+				<td rowspan="2"></td>
+				<td></td>
+			</tr>
+			<tr height="50px" align="center">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		
+		
+	</body>
+</html>

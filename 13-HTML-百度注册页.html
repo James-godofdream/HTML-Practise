@@ -1,0 +1,122 @@
+<html>
+	<head>
+		<title>百度登录页面</title>
+		<meta charset="UTF-8"/>
+		<!--
+			http://127.0.0.1:8020/01-HTML%E5%88%9D%E5%AD%A6%E7%BB%83%E4%B
+			9%A0/13-HTML-%E7%99%BE%E5%BA%A6%E6%B3%A8%E5%86%8C%E9%A1%B5.ht
+			ml?uname=%E5%BC%A0%E4%B8%89&pwd=123&sex=0&age=15&add=1&id=2&w
+			ork=4&fav=1&fav=3&pnb=321&email=awd%40123&experience=%E5%A4%A
+			7%E5%AE%B6%E5%A5%BD%EF%BC%8C%E6%88%91%E6%98%AF%E7%BB%83%E4%B9
+			%A0%E6%97%B6%E9%95%BF%E4%B8%A4%E5%B9%B4%E5%8D%8A%E7%9A%84%E8%
+			94%A1%E5%BE%90%E5%9D%A4&agree%22%22=1&upload=%E4%B8%8A%E4%BC%
+			A0%E6%95%B0%E6%8D%AE
+		-->
+	</head>
+	<body>
+		<h3>欢迎登录百度</h3>
+		<hr />
+		<form action="">
+		<table border="1px" cellpadding="0" cellspacing="1px">
+				<tr height="35px">
+					<td width="90px" align="center">用户名：</td>
+					<td width="190px" align="center">
+						<input type="text" name="uname" value=""/>
+					</td>
+				</tr>
+				<tr height="35px" align="center">
+					<td>密码：</td>
+					<td>
+						<input type="password" name="pwd" value=""/>
+					</td>
+				</tr>
+				<tr height="35px" align="center">
+					<td>性别：</td>
+					<td>
+						男<input type="radio" name="sex" id="" value="0" checked="checked"/>
+						女<input type="radio" name="sex" id="sex" value="1" />
+					</td>
+				</tr>
+				<tr height="35px" align="center">
+					<td>年纪：</td>
+					<td>
+						<input type="text" name="age" id="age" value="" />
+					</td>
+				</tr>
+				<tr height="35px" align="center">
+					<td>籍贯：</td>
+					<td>
+						<select name="add">
+							<option value="0">----请选择----</option>
+							<option value="1">北京</option>
+							<option value="2">上海</option>
+							<option value="3">广州</option>
+							<option value="4">深圳</option>
+						</select>
+					</td>
+				</tr>
+				<tr height="35px" align="center">
+					<td>政治面貌：</td>
+					<td>
+						<select name="id">
+							<option value="0">----请选择----</option>
+							<option value="1">党员</option>
+							<option value="2">预备党员</option>
+							<option value="3">共青团员</option>
+							<option value="4">群众</option>
+						</select>
+					</td>
+				</tr>
+				<tr height="35px" align="center">
+					<td>职业：</td>
+					<td>
+						<select name="work">
+							<option value="0">----请选择----</option>
+							<option value="1">IT行业</option>
+							<option value="2">医生</option>
+							<option value="3">护士</option>
+							<option value="4">律师</option>
+							<option value="5">金融行业</option>
+							<option value="6">政府工作</option>
+							<option value="7">白领</option>
+							<option value="8">经商</option>
+							<option value="9">工人</option>
+						</select>
+					</td>
+				</tr>
+				<tr height="35px" align="center">
+					<td>爱好：</td>
+					<td>
+						唱<input type="checkbox" name="fav" id="fav" value="1" />
+						跳<input type="checkbox" name="fav" id="fav" value="2" />
+						rap<input type="checkbox" name="fav" id="fav" value="3" />
+						篮球<input type="checkbox" name="fav" id="fav" value="4" />
+					</td>
+				</tr>
+				<tr height="35px" align="center">
+					<td>手机号：</td>
+					<td>
+						<input type="text" name="pnb"/>
+					</td>
+				</tr>
+				<tr height="35px" align="center">
+					<td>邮箱：</td>
+					<td>
+						<input type="text" name="email"/>
+					</td>
+				</tr>
+				<tr>
+					<td>个人介绍：</td>
+					<td align="center">
+						<textarea name="experience" rows="5" cols="25"></textarea>
+					</td>
+				</tr>
+			</table>
+			<hr\ /><br />
+			<input type="checkbox" name=agree"" id="" value="1"/>是否阅读并同意《隐私协议》
+			<hr /><br />
+			<input type="button" name="keep" id="keep" value="保存数据"/>
+			<input type="submit" name="upload" id="" value="上传数据"/>
+		</form>
+	</body>
+</html>
